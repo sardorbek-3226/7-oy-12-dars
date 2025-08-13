@@ -1,0 +1,32 @@
+.layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  flex: 3;
+  min-width: 300px;
+}
+
+.cartPanelWrapper {
+  flex: 1;
+  min-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .cartPanelWrapper {
+    width: 100%;
+    order: 2;
+  }
+
+  .mainContent {
+    width: 100%;
+    order: 1;
+  }
+}

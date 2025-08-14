@@ -1,5 +1,5 @@
 import React from "react";
-import Images from "./component/images";
+import Images from "./component/Image";
 import CartModal from "./component/CartModal";
 
 const App = () => {

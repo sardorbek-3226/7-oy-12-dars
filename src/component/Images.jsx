@@ -4,7 +4,7 @@ import { useFetch } from "../hook/useFetch";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, increaseQty, decreaseQty, clearCart, removeFromCart } from "../feature/userSlice/cartSlice";
 
-const Images = () => {
+const Image = () => {
   const { data,loading, error } = useFetch("https://json-api.uz/api/project/dessertss/desserts");
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.cartItems);
@@ -287,4 +287,4 @@ const Images = () => {
   );
 };
 
-export default Images;
+export default Image;

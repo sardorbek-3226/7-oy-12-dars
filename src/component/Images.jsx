@@ -18,7 +18,7 @@ const Images = () => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
 
   return (
-    <div style={{ display: "flex", justifyContent:"space-around",  }}>
+    <div className={style.bigBox} style={{ display: "flex", justifyContent:"space-around",  }}>
     <div className={style.cartContainer}>
       {data?.map((item) => {
         const cartItem = cartItems.find((p) => p.id === item.id);
@@ -157,7 +157,7 @@ const Images = () => {
                 margin: "10px",
                 padding: "8px 12px",
                 borderRadius: "8px",
-                width: "350px",
+                width: "300px",
                 background: "#fff",
                 boxShadow: "0 2px 6px rgba(0,0,0,0.08)",
               }}

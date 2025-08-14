@@ -9,9 +9,11 @@ const CartPanel = () => {
 
   return (
     <div className={style.cartPanel}>
-      <h2>🛒 Your Cart</h2>
+      <h2> Your Cart</h2>
       {cartItems.length === 0 ? (
-        <p>No items yet</p>
+        <div>
+          <p>No items yet</p>
+        </div>
       ) : (
         cartItems.map(item => (
           <div key={item.id} className={style.cartItem}>
